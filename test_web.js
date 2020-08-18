@@ -31,7 +31,7 @@ app.post('/select', function(req, res) {
 app.post('/add', function(req,res) {
     var reqBody = req.body;
 	var time = common.getNowDate();//这里有个获取时间的函数 但是是以字符段存储的
-	var addSql = 'INSERT INTO animation_t(id,name,synopsis,createDate,isEnd,coverImg,updateTime) VALUES(0,?,?,?,?,?)';
+	var addSql = 'INSERT INTO animation_t(id,name,synopsis,createDate,isEnd,coverImg,updateTime) VALUES(0,?,?,?,?,?,?)';
 	var addSqlParams = [];
 	addSqlParams[0] = reqBody.name.toString();
     addSqlParams[1] = reqBody.synopsis.toString();
