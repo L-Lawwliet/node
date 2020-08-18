@@ -4,5 +4,6 @@ module.exports = {
   user: "root",
   password: "123456",
   database: "test",
-  useConnectionPooling: true
+  useConnectionPooling: true,
+  multipleStatements: true
 };

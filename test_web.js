@@ -16,7 +16,7 @@ app.post('/select', function(req, res) {
         // 模糊查询两种方法直接在SQL语句后加 mysql.escape("%"+req.body.name+"%")
         // sql += " WHERE product_name LIKE "+mysql.escape("%"+req.body.name+"%")
         sql += " WHERE userName LIKE ?"
-     }
+    }
     db.query(sql, ['%' + keyword + '%'], function(result, fields) {
         var resultData = {
             "status": 200,
