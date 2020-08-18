@@ -5,5 +5,6 @@ module.exports = {
   password: "123456",
   database: "test",
   useConnectionPooling: true,
-  multipleStatements: true
+  multipleStatements: true,
+  timezone: "SYSTEM"
 };
